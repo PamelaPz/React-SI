@@ -1,0 +1,37 @@
+$varColor1: rgb(231, 150, 0);
+$varColor2: rgb(255, 162, 2);
+$varColor3: rgb(255, 172, 28);
+$varColor4: rgb(255, 178, 45);
+$varColor5: rgb(253, 194, 92);
+$varColor6: rgb(252, 206, 127);
+
+.nav {
+    // background: pink;
+    .nav-item {
+        width: 10rem;
+        color: white;
+    }
+    .nav-link {
+        color: black;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .icon {
+        padding: 5px 0;
+        font-size: 1.2rem;
+        color: white;
+    }
+    #color1 { background: $varColor1;}
+    #color1:hover {background: $varColor2;}
+    #color2 { background: $varColor2;}
+    #color2:hover {background: $varColor3;}
+    #color3 { background: $varColor3;}
+    #color3:hover {background: $varColor4;}
+    #color4 { background: $varColor4;}
+    #color4:hover {background: $varColor5;}
+    #color5 { background: $varColor5;}
+    #color5:hover {background: $varColor6;}
+    #color6 { background: $varColor6;}
+    #color6:hover {background: $varColor1;}
+}

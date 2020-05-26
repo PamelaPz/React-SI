@@ -1,0 +1,76 @@
+.hero {
+    background: orange;
+    overflow: hidden;
+    height: 28rem;
+    padding: 15px 0;
+    color: white;
+    .img_izq {
+        position: relative;
+        width: 26rem;
+    }
+    .img_dch {
+        position: relative;
+        width: 25rem;
+        left: -30px;
+        // right: -8rem;
+    }
+    @media only screen and (max-width: 768px) {
+        .img_izq {
+            position: relative;
+            width: 10rem;
+            left: -6rem;
+        }
+        .img_dch {
+            position: relative;
+            width: 10rem;
+            left: -1.5rem;
+        }
+    }
+    
+    .center {
+        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            margin: auto 0 3rem;
+        }
+        hr {
+            margin: 1rem 0 1rem;
+            border-width: 3px;
+        }
+        p {
+            padding-right: 1rem;
+            display: inline;
+        }
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 1rem;
+            }
+            h2, hr, p {
+                padding: 0;
+                margin: .5rem 0;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .center {
+            height: 13rem;
+        }
+        h2, hr, p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 13rem;
+        padding: 0;
+    }
+}
